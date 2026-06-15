@@ -4,15 +4,17 @@
         const moonIcon = document.getElementById('moonIcon');
         const htmlElement = document.documentElement;
 
+        
         themeToggler.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-bs-theme');
             if (currentTheme === 'dark') {
                 htmlElement.setAttribute('data-bs-theme', 'light');
-                sunIcon.classList.remove('d-none');
-                moonIcon.classList.add('d-none');
+                sunIcon.classList.add('d-none');      
+                moonIcon.classList.remove('d-none');  
             } else {
                 htmlElement.setAttribute('data-bs-theme', 'dark');
-                sunIcon.classList.add('d-none');
-                moonIcon.classList.remove('d-none');
+                sunIcon.classList.remove('d-none');   
+                moonIcon.classList.add('d-none');     
             }
         });
+
