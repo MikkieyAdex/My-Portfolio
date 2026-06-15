@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Michael Adeniji | Security, Tech Support & Web Dev Portfolio</title>
+</head>
+<body>
+
+    <!-- STICKY HEADER -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg class="me-2" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span class="fw-bold tracking-wider">MICHAEL ADENIJI</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3 active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Interactive Lab</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <!-- Theme Toggle Button -->
+                        <button class="theme-switcher-btn" id="themeToggler" aria-label="Toggle dark/light theme">
+                            <!-- Sun Icon -->
+                            <svg class="d-none" id="sunIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <!-- Moon Icon -->
+                            <svg id="moonIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center g-5 py-5 flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3">Available for Security & Development Opportunities</span>
+                    <h1 class="display-4 fw-bold lh-1 mb-3">Michael Adeniji</h1>
+                    <h2 class="h3 text-muted mb-4">Security Analyst & Developer</h2>
+                    
+                    <p class="lead mb-4">
+                        Cybersecurity analyst and web developer. Expertly bridging the gap between security posture and application integrity. Proven record of training healthcare staff on EMR architectures, resolving priority infrastructure tickets, and automating deployment workflows.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4 shadow">Get in Touch</a>
+                        <a href="#projects" class="btn btn-outline-secondary btn-lg px-4">Open Security Lab</a>
+                        <button class="btn btn-link text-decoration-none d-flex align-items-center gap-2" id="downloadResumeBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Resume
+                        </button>
+                    </div>
+
+                    <!-- Recruiter Fast-Facts Stats Block -->
+                    <div class="row g-4 mt-4 pt-4 border-top">
+                        <div class="col-4 col-md-3">
+                            <h3 class="fw-bold text-primary mb-0">15+</h3>
+                            <p class="small text-muted">Hospitals Trained</p>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <h3 class="fw-bold text-primary mb-0">99%</h3>
+                            <p class="small text-muted">SLA Resolution</p>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <h3 class="fw-bold text-primary mb-0">3+</h3>
+                            <p class="small text-muted">Industry Certs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-sm-9 col-11 text-center">
+                    <div class="hero-image-container">
+                        <div class="hero-image-bg"></div>
+                        <!-- Profile Image loads, with fallback styling and vector SVG if local asset fails -->
+                        <img src="images/image.jpg" class="img-fluid hero-img" alt="Michael Adeniji Profile" width="380" height="420" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 380 420%22 width=%22380%22 height=%22420%22 fill=%22%232c3e50%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%231e293b%22/><circle cx=%22190%22 cy=%22160%22 r=%2280%22 fill=%22%23334155%22/><path d=%22M60,340 C60,260 120,240 190,240 C260,240 320,260 320,340 L320,390 L60,390 Z%22 fill=%22%23334155%22/><text x=%2250%25%22 y=%2290%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22sans-serif%22 font-size=%2222%22>Michael Adeniji</text></svg>';">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL TIMELINE SECTION -->
+    <section class="bg-body-tertiary">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Professional Background</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Past -->
+                <div class="col-md-4">
+                    <div class="card h-100 custom-card timeline-card p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="badge bg-primary text-white p-2 rounded">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            </span>
+                            <h3 class="h5 mb-0 fw-bold">The Spark (Past)</h3>
+                        </div>
+                        <p class="text-muted small">
+                            Fascinated by computer systems at age 15. Although early financial constraints restricted hardware access, it drove a hunger to learn network architectures theoretically first. Fast forward: built a secure foundation via self-learning, CS50, and localized IT support.
+                        </p>
+                    </div>
+                </div>
+                <!-- Present -->
+                <div class="col-md-4">
+                    <div class="card h-100 custom-card timeline-card p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="badge bg-success text-white p-2 rounded">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
+                            </span>
+                            <h3 class="h5 mb-0 fw-bold">Active Engagements</h3>
+                        </div>
+                        <p class="text-muted small">
+                            Now a Cybersecurity Analyst, certified by Google, working as a Technical Support Specialist at Clinify EMR Solutions. Integrating real-world medical database security practices with optimized patient records configuration across dynamic infrastructure environments.
+                        </p>
+                    </div>
+                </div>
+                <!-- Future -->
+                <div class="col-md-4">
+                    <div class="card h-100 custom-card timeline-card p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="badge bg-info text-white p-2 rounded">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                            </span>
+                            <h3 class="h5 mb-0 fw-bold">Looking Ahead</h3>
+                        </div>
+                        <p class="text-muted small">
+                            Committed to securing enterprise networks and modernizing web infrastructure. I look forward to contributing clean, defensive code and proactive threat-modeling structures to dynamic engineering organizations globally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center mb-2 fw-bold">Professional Skill Matrix</h2>
+            <p class="text-muted text-center mb-5">Click on any skill to discover its application area.</p>
+
+            <div class="row g-4">
+                <!-- Cybersecurity Stack -->
+                <div class="col-lg-4">
+                    <div class="card h-100 p-4 custom-card">
+                        <h3 class="h5 mb-4 text-primary d-flex align-items-center gap-2">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            Defensive Cybersecurity
+                        </h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge" data-skill="Linux">
+                                <svg viewBox="0 0 24 24"><path d="M12 2s-8 4-8 10h16c0-6-8-10-8-10z M4 12c0 5 4 10 8 10s8-5 8-10H4z"/></svg> Linux Admin
+                            </span>
+                            <span class="skill-badge" data-skill="SQL Injection / Query Security">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> SQL Security
+                            </span>
+                            <span class="skill-badge" data-skill="Scripting Automation">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Python
+                            </span>
+                            <span class="skill-badge" data-skill="Vulnerability Analysis">
+                                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Risk Assessment
+                            </span>
+                            <span class="skill-badge" data-skill="Security Monitoring">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93h2c0 3.04 2.19 5.57 5 6.13v1.8z"/></svg> SIEM Monitoring
+                            </span>
+                            <span class="skill-badge" data-skill="Traffic Analysis">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c2.81-.56 5-3.09 5-6.13h2c0 4.08-3.05 7.44-7 7.93v-1.8z"/></svg> Network Security
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Stack -->
+                <div class="col-lg-4">
+                    <div class="card h-100 p-4 custom-card">
+                        <h3 class="h5 mb-4 text-success d-flex align-items-center gap-2">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            Front-End Web Dev
+                        </h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge" data-skill="Document Layout">HTML5</span>
+                            <span class="skill-badge" data-skill="Responsive Layouts & Bootstrap">CSS3 / Bootstrap</span>
+                            <span class="skill-badge" data-skill="Dynamic Interactive DOM Logic">JavaScript (ES6+)</span>
+                            <span class="skill-badge" data-skill="Version Control Integration">Git Version Control</span>
+                            <span class="skill-badge" data-skill="Collaborative Engineering Code Repository">GitHub Workflow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Professional Stack -->
+                <div class="col-lg-4">
+                    <div class="card h-100 p-4 custom-card">
+                        <h3 class="h5 mb-4 text-info d-flex align-items-center gap-2">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            Enterprise Operations
+                        </h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge" data-skill="User Training & Software Adoption Programs">Technical Training</span>
+                            <span class="skill-badge" data-skill="Internal Infrastructure Manuals">System Documentation</span>
+                            <span class="skill-badge" data-skill="Diagnostic Diagnostics & Active Logs Analysis">Troubleshooting</span>
+                            <span class="skill-badge" data-skill="SLA Management & Ticket Remediation">Customer Success</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactivity Insight Panel -->
+            <div class="mt-4 p-3 rounded-3 text-center border bg-body-secondary d-none" id="skillDescriptionPanel">
+                <strong id="selectedSkillName" class="text-primary">Selected Skill</strong>: <span id="selectedSkillDetail">Detail text will show here.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS & RECRUITER LAB SECTION -->
+    <section id="projects" class="bg-body-tertiary">
+        <div class="container">
+            <h2 class="text-center mb-2 fw-bold">Hands-On Validation Labs</h2>
+            <p class="text-muted text-center mb-5">Prove technical expertise in real time. Interact with the sandbox terminal below to verify operations competencies.</p>
+
+            <div class="row g-4">
+                <!-- Sandbox Interactive Terminal Widget -->
+                <div class="col-lg-7">
+                    <div class="terminal-box h-100 d-flex flex-column">
+                        <div class="terminal-header">
+                            <span class="terminal-dot bg-danger"></span>
+                            <span class="terminal-dot bg-warning"></span>
+                            <span class="terminal-dot bg-success"></span>
+                            <span class="ms-2 text-muted small font-monospace">michael@security-sandbox:~$</span>
+                        </div>
+                        <div class="terminal-body d-flex flex-column justify-content-between">
+                            <div id="terminalConsoleOutput">
+                                <p class="text-info">=== SECURE LINUX TERMINAL SIMULATION v1.0 ===</p>
+                                <p class="text-muted">Type 'help' to view available system diagnostic commands.</p>
+                                <p class="text-muted">Type 'logcheck' to analyze simulated system intrusion attempt records.</p>
+                            </div>
+                            <div class="terminal-input-line pt-3 mt-auto border-top border-secondary">
+                                <span class="text-warning">$</span>
+                                <input type="text" id="terminalConsoleInput" class="terminal-input" autofocus autocomplete="off" placeholder="Enter command here...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Case Study Card -->
+                <div class="col-lg-5">
+                    <div class="card h-100 p-4 custom-card border-primary">
+                        <span class="badge bg-primary align-self-start mb-3">Live Enterprise Case Study</span>
+                        <h3 class="h4 mb-3 fw-bold">Clinify EMR Deployment</h3>
+                        <p class="text-muted small">
+                            At **Clinify EMR Solutions**, coordinated critical health-tech software transitions across multiple hospital servers. Built support configurations, optimized relational database query paths, and deployed staff adoption workshops.
+                        </p>
+                        <h4 class="h6 fw-bold mt-3">Key Solutions Applied:</h4>
+                        <ul class="text-muted small ps-3">
+                            <li>Secured patient records data flows (HIPAA-aligned structures).</li>
+                            <li>Eliminated downtime of EMR interface configurations.</li>
+                            <li>Delivered critical diagnostics on clinical workstations.</li>
+                        </ul>
+                        <div class="mt-auto pt-3">
+                            <button class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#clinifyStudyModal">Review Audit Case Study File</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Verified Professional Certifications</h2>
+            <div class="row g-4 text-center">
+                
+                <!-- Cert 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 custom-card">
+                        <div class="cert-svg-container">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="h5 mb-2 fw-bold">Google Cybersecurity Professional</h3>
+                        <p class="text-muted small mb-0">Issued via Coursera. Fully tested validation across SQL vulnerability audits, security policies, and SIEM tool log inspection.</p>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 custom-card">
+                        <div class="cert-svg-container">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="h5 mb-2 fw-bold">Full Stack Web Development</h3>
+                        <p class="text-muted small mb-0">The Complete Web Dev Bootcamp (Udemy). Verified competencies across core CSS architectures, DOM integration, and database operations.</p>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 custom-card">
+                        <div class="cert-svg-container">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="h5 mb-2 fw-bold">ICT Front-End Development</h3>
+                        <p class="text-muted small mb-0">Lagos State Physical Training Initiative. Three months of intensive, instructor-led defensive UI structure planning, UX optimization, and technical specifications design.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-body-tertiary">
+        <div class="container" style="max-width: 750px;">
+            <h2 class="text-center mb-2 fw-bold">Initiate Connection</h2>
+            <p class="text-muted text-center mb-5">Inquire about staff opportunities, review references, or ask technical security queries.</p>
+
+            <form id="portfolioContactForm" class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label font-monospace small">FULL NAME</label>
+                    <input type="text" class="form-control" id="inputName" required placeholder="E.g. Recruiter Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label font-monospace small">EMAIL ADDRESS</label>
+                    <input type="email" class="form-control" id="inputEmail" required placeholder="name@company.com">
+                </div>
+                <div class="col-12">
+                    <label for="inputSubject" class="form-label font-monospace small">INQUIRY SUBJECT</label>
+                    <input type="text" class="form-control" id="inputSubject" required placeholder="Opportunity / Reference request">
+                </div>
+                <div class="col-12">
+                    <label for="inputMessage" class="form-label font-monospace small">DETAILED MESSAGE</label>
+                    <textarea class="form-control" id="inputMessage" rows="5" required placeholder="Details about your team or project requirements..."></textarea>
+                </div>
+                <div class="col-12 text-center pt-3">
+                    <button type="submit" class="btn btn-primary btn-lg px-5 shadow">Send Portfolio Message</button>
+                </div>
+            </form>
+
+            <div id="contactFormAlert" class="alert mt-4 d-none" role="alert"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <span class="text-muted">© 2026 Michael Adeniji. Defensive Design Philosophy.</span>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex gap-3">
+                <li>
+                    <a class="text-muted" href="https://github.com" target="_blank" aria-label="GitHub Profile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-muted" href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE CASE STUDY MODAL -->
+    <div class="modal fade" id="clinifyStudyModal" tabindex="-1" aria-labelledby="clinifyStudyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="clinifyStudyModalLabel">Clinify EMR Security & Support Log Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body font-monospace text-start">
+                    <p class="text-success">// STATUS: ARCHIVED ARCHITECTURE RECORD</p>
+                    <p><strong>System Scope:</strong> Healthcare EMR (Electronic Medical Record)</p>
+                    <p><strong>Critical Action Executed:</strong> Troubleshooting multi-workstation client access issues, security hardening against unauthorized local system changes, and EMR SQL structure verification to accelerate data reads.</p>
+                    <hr>
+                    <p><strong>Security Protocols Checked:</strong></p>
+                    <ul>
+                        <li>Configured secure credential management systems.</li>
+                        <li>Eliminated default test logins from workstations inside public access nodes.</li>
+                        <li>Configured local firewalls protecting vital EMR endpoints.</li>
+                    </ul>
+                    <p><strong>Realized Outcomes:</strong></p>
+                    <p>Successfully managed transition protocols, leading to 100% clinician adoption metrics in 4 target hospitals in Lagos with zero downtime.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-target="#contact" data-bs-toggle="scroll" data-bs-dismiss="modal">Request Detailed Case Document</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>
