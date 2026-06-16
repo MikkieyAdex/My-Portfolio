@@ -18,3 +18,8 @@
             }
         });
 
+// 2. Download Resume Button
+document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+    window.open('assets/michael-adeniji-resume.pdf', '_blank');
+});
+
