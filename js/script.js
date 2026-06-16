@@ -84,11 +84,88 @@
             e.preventDefault();
             formAlert.classList.remove('d-none', 'alert-success', 'alert-danger');
             
-            // Client side simulator
-            formAlert.classList.add('alert-success');
-            formAlert.textContent = `Excellent. Thank you, ${document.getElementById('inputName').value}! Your mock inquiry regarding '${document.getElementById('inputSubject').value}' has been captured successfully. Michael's communications channel is active.`;
-            
-            contactForm.reset();
+            // Change button text to show loading status
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = "Sending...";
+            submitBtn.disabled = true;
+
+            // Send email via EmailJS using the form element directly
+            emailjs.sendForm('service_qyahxa9', 'template_bhzpgoh', contactForm)
+                .then(() => {
+                    formAlert.classList.add('alert-success');
+                    formAlert.textContent = `Excellent. Thank you, ${document.getElementById('inputName').value}! Your inquiry regarding '${document.getElementById('inputSubject').value}' has been captured successfully. Michael's communications channel is active.`;
+                    
+                    contactForm.reset();
+                })
+                .catch((error) => {
+                    formAlert.classList.add('alert-danger');
+                    formAlert.textContent = `Oops! Transmission failed. Please try again or reach out directly.`;
+                    console.error('EmailJS Error:', error);
+                })
+                .finally(() => {
+                    // Re-enable submission button
+                    submitBtn.textContent = originalBtnText;
+                    submitBtn.disabled = false;
+                });
         });
 
+
+// 6. Custom Pure JS Scrollspy & Smooth-Scroll Engine
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        // Click handler with precise header offset correction
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetId = link.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        const headerOffset = 85; // Matches nav design specifications
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Clean UX: Collapse mobile burger dropdown menu upon link click
+                        const navbarCollapse = document.getElementById('navbarNav');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                            if (bsCollapse) {
+                                bsCollapse.hide();
+                            }
+                        }
+                    }
+                }
+            });
+        });
+
+        // Active highlighted link calculation engine
+        function activeMenuOnScroll() {
+            let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            scrollPosition += 120; // Exact section visual trigger point offset
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', activeMenuOnScroll);
+        window.addEventListener('load', activeMenuOnScroll);
 

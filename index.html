@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style2.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+            publicKey: "6twVPEamTHX5HDCn9",
+            });
+        })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0R301QEVB3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0R301QEVB3');
+    </script>
+
+
     <title>Michael Adeniji | Security, Tech Support & Web Dev Portfolio</title>
 </head>
 <body>
@@ -351,19 +372,19 @@
             <form id="portfolioContactForm" class="row g-3">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label font-monospace small">FULL NAME</label>
-                    <input type="text" class="form-control" id="inputName" required placeholder="E.g. Recruiter Name">
+                    <input type="text" class="form-control" id="inputName" name="name" required placeholder="E.g. Recruiter Name">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail" class="form-label font-monospace small">EMAIL ADDRESS</label>
-                    <input type="email" class="form-control" id="inputEmail" required placeholder="name@company.com">
+                    <input type="email" class="form-control" id="inputEmail" name="email" required placeholder="name@company.com">
                 </div>
                 <div class="col-12">
                     <label for="inputSubject" class="form-label font-monospace small">INQUIRY SUBJECT</label>
-                    <input type="text" class="form-control" id="inputSubject" required placeholder="Opportunity / Reference request">
+                    <input type="text" class="form-control" id="inputSubject" name="subject" required placeholder="Opportunity / Reference request">
                 </div>
                 <div class="col-12">
                     <label for="inputMessage" class="form-label font-monospace small">DETAILED MESSAGE</label>
-                    <textarea class="form-control" id="inputMessage" rows="5" required placeholder="Details about your team or project requirements..."></textarea>
+                    <textarea class="form-control" id="inputMessage" name="message" rows="5" required placeholder="Details about your team or project requirements..."></textarea>
                 </div>
                 <div class="col-12 text-center pt-3">
                     <button type="submit" class="btn btn-primary btn-lg px-5 shadow">Send Portfolio Message</button>
@@ -413,7 +434,7 @@
                         <li>Configured local firewalls protecting vital EMR endpoints.</li>
                     </ul>
                     <p><strong>Realized Outcomes:</strong></p>
-                    <p>Successfully managed transition protocols, leading to 100% clinician adoption metrics in 4 target hospitals in Lagos with zero downtime.</p>
+                    <p>Successfully managed transition protocols, leading to 100% clinician adoption metrics in 7 target hospitals in Lagos, Nigeria with zero downtime.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-target="#contact" data-bs-toggle="scroll" data-bs-dismiss="modal">Request Detailed Case Document</button>
@@ -424,7 +445,7 @@
 
 
 
-
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 
     
